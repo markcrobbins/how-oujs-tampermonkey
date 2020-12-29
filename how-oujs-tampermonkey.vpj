@@ -1,0 +1,83 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="web"
+    Customized="1"
+    WorkingDir=".">
+    <Config
+        Name="Release"
+        OutputFile=""
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec CmdLine='"how-oujs-tampermonkey.exe"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Files>
+        <Folder
+            Name="png "
+            Filters="*.png"
+            GUID="{A47FEC95-E534-48F3-0D7A-EB54AFB506BC}"/>
+        <Folder
+            Name="js "
+            Filters="*.js"
+            GUID="{F0857CDD-A726-4F7B-64A0-489386FFE4A8}">
+            <F N="how-oujs-tampermonkey.user.js"/>
+            <F N="required.js"/>
+        </Folder>
+        <Folder
+            Name="css "
+            Filters="*.css"
+            GUID="{57A41F6D-5D28-4328-7847-1E3454FAC1AB}">
+            <F N="style.css"/>
+        </Folder>
+        <Folder
+            Name="html "
+            Filters="*.html"
+            GUID="{F56DBEFA-8906-4C80-71F5-D73DE0FCB88D}"/>
+        <Folder
+            Name="Other Files "
+            Filters=""
+            GUID="{7672F1DA-6665-4830-EA1E-1833B5604AB8}">
+            <F N="how-oujs-tampermonkey.vpj"/>
+            <F N="how-oujs-tampermonkey.vpw"/>
+        </Folder>
+    </Files>
+</Project>
